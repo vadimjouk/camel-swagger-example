@@ -1,5 +1,5 @@
 # Runtime base Image
-FROM docker.artifactory.rewe.local/rewe/openjdk:8-jre
+FROM openjdk:11
 
 USER root
 
