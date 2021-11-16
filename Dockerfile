@@ -7,7 +7,7 @@ USER root
 # COPY --from=builder /app/target/app.jar /
 
 # Copy assembly and unzip
-COPY  --from=builder /app/target/app.tar.gz /
+COPY   /app/target/app.tar.gz /
 RUN tar -xvzf app.tar.gz
 RUN rm app.tar.gz
 
