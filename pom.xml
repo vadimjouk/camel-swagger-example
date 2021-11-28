@@ -129,7 +129,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix></classpathPrefix>
-							<mainClass>de.rewe.hop.HopMainApp</mainClass>
+							<mainClass>jouk.rest.SwaggerRestApp</mainClass>
 						</manifest>
 					</archive>
 					<excludes>
