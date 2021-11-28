@@ -5,7 +5,7 @@ USER root
 
 # Copiere das Java Artefakt aus Build Container
 # COPY --from=builder /app/target/app.jar /
-COPY  /home/runner/work/camel-swagger-example/camel-swagger-example/target/app.tar.gz /
+COPY  ./target/app.tar.gz /
 
 
 # Copy assembly and unzip
