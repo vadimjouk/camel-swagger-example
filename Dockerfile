@@ -13,7 +13,6 @@ COPY  ./target/app.tar.gz /
 RUN tar -xvzf app.tar.gz
 RUN rm app.tar.gz
 
-USER java
 # verify that all is in place
 RUN cd /lib
 RUN ls -la /lib/app.jar
