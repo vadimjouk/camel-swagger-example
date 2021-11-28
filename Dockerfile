@@ -4,10 +4,10 @@ FROM openjdk:11
 USER root
 
 # Copiere das Java Artefakt aus Build Container
-# COPY --from=builder /app/target/app.jar /
+COPY --from=builder /app/target/app.jar /
 
 # Copy assembly and unzip
-COPY   /app/target/app.tar.gz /
+# COPY   /app/target/app.tar.gz /
 RUN tar -xvzf app.tar.gz
 RUN rm app.tar.gz
 
