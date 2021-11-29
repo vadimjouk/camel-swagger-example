@@ -19,7 +19,7 @@
 			</includes>
 		</fileSet>
 		<fileSet>
-			<directory>hawt</directory>
+			<directory>lib/hawt</directory>
 			<outputDirectory>lib/hawt</outputDirectory>
 			<includes>
 				<include>hawtio*.war</include>
