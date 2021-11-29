@@ -1,13 +1,15 @@
 package jouk.rest;
 
-public class User {
-	int id;
+import java.util.UUID;
 
-	public int getId() {
+public class User {
+	String id = UUID.randomUUID().toString();
+
+	public String getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 }

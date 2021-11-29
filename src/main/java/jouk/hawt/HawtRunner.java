@@ -9,7 +9,7 @@ public class HawtRunner {
 	public static void run() {
 		System.setProperty("hawtio.authenticationEnabled", "false");
 		io.hawt.embedded.Main hawt = new io.hawt.embedded.Main();
-		hawt.setWarLocation("hawt");
+		hawt.setWarLocation("lib/hawt");
 
 		try {
 			hawt.run();

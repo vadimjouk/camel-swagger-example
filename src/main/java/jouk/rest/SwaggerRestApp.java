@@ -10,9 +10,11 @@ public class SwaggerRestApp {
 	private static final Logger LOG = LoggerFactory.getLogger(SwaggerRestApp.class);
 
 	public static void main(String[] args) {
+
 		HawtRunner.run();
 
 		Main camel = new Main();
+		camel.bind("userService", new UserService());
 
 		camel.addRouteBuilder(new SwaggerApiRestRoute());
 		try {
